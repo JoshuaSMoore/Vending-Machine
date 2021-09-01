@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Vending-Machine</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+            </div>
+                <div class="col-lg-5 p-5">
+                    <h1 class = text-primary>Vending Machine of your Dreams! </h1>
+                </div>
+                    <div class="col-lg-4 text-center p-5">
+                        <img src="https://c.tenor.com/n0k2SnoY7vQAAAAM/hamm-toy-story.gif" alt = "PiggyBank">
+                    </div>
+            </div>
+        </main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 text-center py-4">
+                    <img src="https://previews.123rf.com/images/kongvector/kongvector1905/kongvector190506764/123941162-with-beer-toy-vending-machine-above-cartoon-table-vector-illustration.jpg" onclick="app.snackController.getPaid()" alt="Vending Machine" style="max-height: 600px; min-width: 250px;">
+                </div>
+                    <div class="col-lg-4 d-flex justify-content-around pl-5">
+                        <div id="GetMoney">0</div>
+                        <div class="buy button">
+                            <button class = "btn btn-secondary" type="button" onclick="Buyfood">Skittles</button>
+                                </div>
+                            <div>
+                                <button class = "btn btn-secondary" type="button" onclick="Buyfood">Ruffles</button>
+                            </div>
+                            <div>
+                                <button class = "btn btn-secondary" type="button" onclick="Buyfood">Red Bull</button>
+                            </div>
+                            <div>
+                                <button class = "btn btn-secondary " type="button" onclick="Buyfood">Jerky</button>
+                            </div>
+                            <p>Snacks :<span id = "snackList">0</span></p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    <footer class="bg-dark text-light">
+        <div class="text-center">
+            <p><small>Made with love by Codeworks</small></p>
+        </div>
+    </footer>
+
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
